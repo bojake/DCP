@@ -39,7 +39,7 @@
 #define REMOVE_TRAILING_SLASHES(_str)                           \
     do {                                                        \
         size_t _len = strlen(_str);                             \
-        while (_str[_len - 1 ] == '/') { _str[--_len] = '\0'; } \
+        while (len>0 && _str[_len - 1 ] == '/') { _str[--_len] = '\0'; } \
     } while(0)
 
 
